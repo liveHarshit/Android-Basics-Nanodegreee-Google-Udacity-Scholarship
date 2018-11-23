@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name="firstPlayerA">Player_A 1</string>
+    <string name="secondPlayerA">Player_A 2</string>
+    <string name="firstPlayerB">Player_B 1</string>
+    <string name="secondPlayerB">Player_B 2</string>
+    <string name="gain">Gain Point</string>
+    <string name="lose">Lose Point</string>
+    <string name="resetDescription">Reset scores of both teams</string>
+    <string name="cancelDescription">Cancel last point</string>
+    <string name="newDescription">Start a new game and allow user to choose player names</string>
+    <string name="closeDescription">Close Score Keeper Badminton Application</string>
+    <string name="startingScore">0</string>
+    <string name="setPlayerNames">Set Player Names</string>
+    <string name="useDefault">Use Default, Quick Start</string>
+    <string name="or">Or</string>
+    <string name="enterPlayersName">Enter Player Names</string>
+    <string name="secondOptional">Player 1 Names are Required, Player 2 Names are Optional!</string>
+    <string name="separator">Separator Between Badminton Teams</string>
+    <string name="startPlaying">Start Playing</string>
+    <string name="imgSource">https://www.sportsflu.com/wp-content/uploads/2017/09/Untitled-design-2.png</string>
+    <string name="quote">Badminton\nis not just about Strength, but about Determination!</string>
+    <string name="info">Information about Badminton game rules</string>
+    <string name="rules">To win a set, you must score 21 points and be at least two points ahead. If the scores are 20 each, for example, game carries on until one player or pair has a two point lead. At 29 all, the side scoring the 30th point will win game.</string>
+</resources>
