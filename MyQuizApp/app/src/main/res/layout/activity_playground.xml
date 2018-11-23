@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PlaygroundActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1742a1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_congrats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/congratulations" />
+
+        <TextView
+            android:paddingTop="16dp"
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tip"
+            android:textColor="@color/colorWhite" />
+
+        <!--
+        Question 1 Block
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingQuestion"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton1a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gitPush" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gitFork" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gitClone" />
+
+                <RadioButton
+                    android:id="@+id/radioButton1d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gitCommit" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/res_1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_response1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/emotion"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textView_response1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+       Question 2 Block
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingQuestion"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton2a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fork" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gitFork" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/res_2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_response2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/emotion"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textView_response2"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_height="48dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--
+       Question 3 Block
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingQuestion"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rightAnswer1" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rightAnswer2" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rightAnswer3" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wrongAnswer" />
+
+            <LinearLayout
+                android:id="@+id/res_3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_response3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/emotion"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textView_response3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+       Question 4 Block
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingQuestion"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/userResponse1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_curve"
+                android:hint="@string/answerHint"
+                android:inputType="text"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:id="@+id/res_4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_response4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/emotion"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textView_response4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--
+       Question 5 Block
+       -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/question_bg"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/loadingQuestion"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/userResponse2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_curve"
+                android:hint="@string/answerHint"
+                android:inputType="text"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:id="@+id/res_5"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_response5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/emotion"
+                    android:scaleType="fitCenter" />
+
+                <TextView
+                    android:id="@+id/textView_response5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/curve_button"
+            android:text="@string/submit"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/buttonResLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/quitQuiz"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/exitIcon" />
+
+            <ImageView
+                android:id="@+id/tryAgain"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/tryIcon" />
+
+            <ImageView
+                android:id="@+id/shareScore"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/shareIcon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

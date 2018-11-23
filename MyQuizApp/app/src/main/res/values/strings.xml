@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My Quiz App</string>
+    <string name="git_logo_source">https://cdn2.iconfinder.com/data/icons/social-aquiocons/512/Aquicon-Github.png</string>
+    <string name="quiz_logo_source">https://furtherinsights.com/wp-content/uploads/Quiz-Psych-Pic-1.png</string>
+    <string name="start">Click on Image to Begin Github Introductory Quiz</string>
+    <string-array name="questionBank">
+        <item>What\'s the git command that downloads your repository from Github to your computer?</item>
+        <item>How do you create a copy of a lab under your own github account so that you can solve the lab?</item>
+        <item>Git outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like (select all that apply)</item>
+        <item>How do you check the state of your local git repository since your last commit?</item>
+        <item>How do you stage files for a commit?</item>
+    </string-array>
+
+    <string-array name="answerBank">
+        <item>git clone</item>
+        <item>Forking it via Github interface</item>
+        <item>cheap local branching, convenient staging areas and multiple workflows.</item>
+        <item>git status</item>
+        <item>git add</item>
+    </string-array>
+    <string name="loadingQuestion">Question is Loading !!!\nPlease Wait</string>
+    <string name="answerHint">Enter Git Command</string>
+    <string name="submit">Lock Your Answers</string>
+    <string name="gitPush">git push</string>
+    <string name="gitFork">git fork</string>
+    <string name="gitClone">git clone</string>
+    <string name="gitCommit">git commit</string>
+    <string name="fork">Forking it via Github interface</string>
+    <string name="rightAnswer1">cheap local branching</string>
+    <string name="rightAnswer2">convenient staging areas</string>
+    <string name="rightAnswer3">multiple workflows</string>
+    <string name="wrongAnswer">None of these</string>
+    <string name="congratulations">congratulations GIF</string>
+    <string name="shareIcon">Share Icon</string>
+    <string name="tryIcon">Try Again Icon</string>
+    <string name="exitIcon">Exit App Icon</string>
+    <string name="emotion">emotion face</string>
+    <string name="correct">Correct Answer, Good Job</string>
+    <string name="wrong">Your Response is Wrong, Correct answer:</string>
+    <string name="tip">Note: There is no negative marking, Try all questions!</string>
+    <string name="regards">You have completed Git Quiz, keep up the hard work.. :)</string>
+</resources>
