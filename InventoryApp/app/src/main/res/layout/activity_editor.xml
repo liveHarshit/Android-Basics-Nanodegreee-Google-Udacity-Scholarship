@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditorActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/add_new_product"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductAddTextStyle"
+            android:layout_height="wrap_content"
+            android:text="@string/product_name" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/productNameEditText"
+                style="@style/EditProductStyle"
+                android:hint="@string/product_name"
+                android:inputType="textCapWords"
+                android:maxLength="14" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductAddTextStyle"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/productPriceEditText"
+                style="@style/EditProductStyle"
+                android:hint="@string/product_price"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/CurrencyStyle"
+                android:text="@string/currency" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductAddTextStyle"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/productQuantityEditText"
+                style="@style/EditProductStyle"
+                android:hint="@string/quantity"
+                android:inputType="number" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductAddTextStyle"
+            android:layout_height="48dp"
+            android:text="@string/supplier_name" />
+
+        <Spinner
+            android:id="@+id/productSupplierNameSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ProductAddTextStyle"
+            android:layout_height="wrap_content"
+            android:text="@string/supplier_phone_number" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <EditText
+                android:id="@+id/productSupplierPhoneNumberEditText"
+                style="@style/EditProductStyle"
+                android:hint="@string/supplier_phone_number"
+                android:inputType="phone"
+                android:maxLength="12" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
