@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+    <string name="add_new_product">Add New Product</string>
+    <string name="product_name">Product Name</string>
+    <string name="home">Inventory List</string>
+    <string name="price">Price</string>
+    <string name="product_price">Product Price</string>
+    <string name="currency">$</string>
+    <string name="quantity">Quantity</string>
+    <string name="supplier_name">Supplier Name</string>
+    <string name="supplier_phone_number">Supplier Phone No.</string>
+    <string name="save">Save</string>
+    <string name="error_message">Mandatory Field!</string>
+    <string name="supplier_unknown">Unknown</string>
+    <string name="supplier_amazon">Amazon</string>
+    <string name="supplier_flipkart">Flipkart</string>
+    <string name="supplier_paytm">Paytm</string>
+    <string name="task_complete_added_new_product_saved">Task complete \nAdded new Product \nCheckout Home Screen!</string>
+    <string name="action_delete_all_products">Delete All Products</string>
+    <string name="edit">Edit</string>
+    <string name="sale">Sale</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_quantity">Product Quantity</string>
+    <string name="update">Update</string>
+    <string name="minus_one">-1</string>
+    <string name="plus_one">+1</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="discard">Discard</string>
+    <string name="unsaved_changes_dialog_msg">All Changes Are Unsaved!\nWant to Continue?</string>
+    <string name="update_successful">Successfully Updated</string>
+    <string name="update_failed">Update Failed</string>
+    <string name="insert_successful">Successfully Inserted</string>
+    <string name="insert_failed">Insertion Failed</string>
+    <string name="get_started_by_adding_a_product">You don\'t have any product in stock.\nAdd a Product using + Icon.</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all_dialog_msg">Sure? Delete All Products</string>
+    <string name="deleted_all_products_message">Product Deleted</string>
+    <string name="empty_inventory">Empty Inventory</string>
+    <string name="delete_dialog_msg">Delete This Product?</string>
+    <string name="delete_product_successful">Product Deleted</string>
+    <string name="delete_product_failed">Error whlie product deletion</string>
+    <string name="quantity_change_msg">Quantity is Changed</string>
+    <string name="quantity_finish_msg">Product was finished  :( , Buy Another Product</string>
+
+</resources>
