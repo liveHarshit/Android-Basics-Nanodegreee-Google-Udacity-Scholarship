@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Best Cafe</string>
+    <string name="app_exit">Exit</string>
+    <string name="about">About Cafe\n Established Not Till Date</string>
+    <string name="cafe_icon">My best Cafe Icon</string>
+    <string name="website">www.myBestCafe.in</string>
+    <string name="contact_details">+91 9460939248</string>
+    <string name="call_us">tel:9460939248</string>
+    <string name="contact_icon">Contact Phone Number</string>
+    <string name="website_icon">Website</string>
+    <string name="location_icon">Location Address</string>
+    <string name="address">Sector 2,\nPlot No 289,\nVidhyadhar Nagar, Jaipur</string>
+    <string name="website_alert">Website Is Under Construction!\nTry Later :)</string>
+    <string name="tip_aboutUs">TIP: Click On Image To Know About Us.\nClick Again To Get Back!</string>
+    <string name="feedback_icon">Feedback Icon</string>
+    <string name="feedback">Send Us Your Valuable Feedback \nVia Mail!</string>
+    <string name="mail_id">kshitizsharma2@acm.org</string>
+    <string name="message_body">What is your opinion regrading this?\nAnswer: \n\n\nmailto:kshitizsharma2@acm.org</string>
+    <string name="mail_subject">Feedback Regarding Single Screen Cafe App!</string>
+    <string name="hours_of_operation_icon">Hours Of Operation Of Cafe Business</string>
+    <string name="work">Monday to Saturday\n10am to 10pm</string>
+    <string name="reservation">We too accept reservation up to 2 week in advance. Inform us to RESERVE A TABLE in advance.</string>
+</resources>
