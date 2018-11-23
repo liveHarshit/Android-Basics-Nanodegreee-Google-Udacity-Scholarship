@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeffb"
+    android:orientation="vertical"
+    tools:context=".NowPlaying">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="7"
+        android:contentDescription="@string/songName"
+        android:scaleType="centerCrop"
+        android:src="@drawable/music_update2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/seekBar"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/seekBar"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/backbg_yellow"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/songName"
+            android:textColor="@color/colorBlack"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/backbg"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="@string/songDetails"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            tools:text="@string/songDetails" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="351dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/backbg_red"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/startingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:padding="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            tools:text="@string/startingTime" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/seekBar"
+            android:layout_alignRight="@id/seekBar"
+            android:layout_below="@id/seekBar"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:padding="4dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            tools:text="@string/totalTime" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignEnd="@+id/seekBar"
+            android:layout_alignRight="@+id/seekBar"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            app:backgroundTint="@color/colorFav"
+            app:srcCompat="@drawable/outline_favorite_border_white_24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/song_options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal|center_vertical">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            app:backgroundTint="@color/colorStarting"
+            app:srcCompat="@drawable/outline_repeat_white_24dp" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/outline_skip_previous_white_24dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/text_view_background"
+            android:clickable="true"
+            android:contentDescription="@string/nowPlaying"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_play_circle_outline_white_36dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="center"
+            app:srcCompat="@drawable/outline_skip_next_white_24dp"
+            tools:ignore="RelativeOverlap" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop"
+            app:backgroundTint="@color/colorStarting"
+            app:srcCompat="@drawable/outline_shuffle_white_24dp" />
+
+    </LinearLayout>
+</LinearLayout>
